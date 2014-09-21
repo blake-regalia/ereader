@@ -1,0 +1,169 @@
+1
+Core concepts of spatial information for transdisciplinary research
+Werner Kuhn
+Institute for Geoinformatics, University of Münster (kuhn@uni-muenster.de)
+Geographic information science is emerging from its niche "behind the systems", getting ready to contribute to transdisciplinary research. To succeed, a conceptual consensus across multiple disciplines on what spatial information is and how it can be used is needed. The article proposes a set of ten core concepts of spatial information, intended to be meaningful to scientists who are not specialists of spatial information: location, neighbourhood, field, object, network, event, granularity, accuracy, meaning, and value. Each proposed concept is briefly characterized, demonstrating the need to map between their different disciplinary uses.
+Keywords: trandisciplinarity; spatiality; core concepts of spatial information.
+Introduction
+Two decades after Michael Goodchild's call for a science behind the systems (Goodchild 1992), geographic information science faces an even larger opportunity: to contribute its expertise through transdisciplinary approaches to the major challenges of humanity. Consider biodiversity, climate change, cultural heritage, debt, energy, water, natural hazards, health, poverty, or security ­ spatial information at global, regional, and local scales is essential for addressing each of these challenges. They all require a better understanding of, and better decisions about, the location and interaction of things in space and time.
+Transdisciplinary research is characterized by addressing problems that are "not confined by the boundaries of a single disciplinary framework" (Wickson et al. 2006) and seeking knowledge about how to solve them by integrating information and approaches from multiple disciplines in the context of deciding on social policies.
+
+2
+Transdisciplinary approaches are often based on profoundly spatial notions, for instance risk or sustainability. Increasingly, they also use spatially explicit models, at multiple scales, of phenomena like carbon emissions or genetic variation.
+An exemplary case for the successful use of spatial information across disciplines and scales is deforestation monitoring in the Amazon (Aguiar et al. 2007). Combining satellite imagery with ground sensor measurements and socio-economic data in spatial models and time series helps researchers detect local and regional deforestation patterns. Presenting these to farmers, decision makers, law enforcement organizations, and citizens at annual, quarterly, and even daily intervals has helped reduce the depletion rate of our planet's lungs dramatically, while also revealing some alarming fluctuations1.
+The point of this example is that spatial information and spatial technologies tie together diverse scientific disciplines and societal stakeholders. The shared focus on the spatial and temporal aspects of a phenomenon (the Amazon with the natural and anthropogenic processes acting on it) establishes transparency and relates different perspectives. With massive supplies of sensor data, obtained remotely and in situ, covering large parts of the world at multiple granularities, and increasingly available in open access form, opportunities for integrating the views of individual disciplines and stakeholders are multiplying.
+Transdisciplinary uses of spatial information require that spatial information be seen as an enabler for solving societal problems across disciplinary boundaries, not just as the subject of a discipline of its own. The achievements of geographic information science (Goodchild 2010) can empower scientists of many disciplines to exploit spatiality in their theories and models (Janelle & Goodchild 2011). The missing link is a
+1 http://www.economist.com/blogs/dailychart/2011/05/deforestation
+
+3
+clear and simple, but comprehensive, conceptual view of these achievements, allowing hypotheses and theories to be formulated in spatial terms. Today, linguists, economists, or biologists interested in forming or testing a spatial hypothesis still need to dig into research papers, software manuals, and standards, even to discover if a spatial perspective could be useful to them. Many such researchers may be ill prepared to understand the internal language of geographic information science used by these sources. What they need is a broadly defined set of concepts that connects spatial data and analyses to domain problems across disciplines.
+A growing number of projects2 suggest that a conceptual view of spatial information has the potential to contribute broadly to the understanding of environmental, social, and cognitive processes. The list of "foundation concepts in spatial thinking" proposed in (Janelle & Goodchild 2011) was the first synthesizing attempt at capturing spatial thinking in a small set of concepts without disciplinary, mathematical, or technological biases. It is similar to the list proposed here, but emphasizes the social sciences and spatial thinking rather than spatial information and its properties in general. In practice, the latter results in the inclusion of non-spatial information concepts like meaning and value.
+The work presented here attempts to cut across all disciplinary and technological boundaries by defining a set of core concepts of spatial information, intended to support a broader use of spatial information in science and society. As opposed to foundation concepts in spatial thinking, which are cognitive primitives, these concepts are human constructions implemented in data models and algorithms. They developed uniquely in each discipline and require mappings across these in order to become shared concepts.
+2 Some examples with a variety of goals are http://www.csiss.org, http://spatial.ucsb.edu, http://www.teachspatial.org, http://spatiallearning.org, http://www.le.ac.uk/gg/splint, http://uspatial.umn.edu, http://spatial.uni-muenster.de, http://spatial.linkedscience.org.
+
+4
+Therefore, the set of core concepts presented here only represents a first step toward building an effective support for spatially informed transdisciplinary work. Further research on conceptual mappings will involve the construction of correspondences among different uses of the concepts.
+The article begins with a description of the integrative function and characteristics of spatial information. It then turns to a discussion of the criteria used for choosing core concepts and presents the proposed set of concepts. It concludes with an outlook on future work to be completed within and outside geographic information science.
+Spatial information as an integrator for transdisciplinary work
+The information needed for transdisciplinary research is typically distributed over a vast range of disciplines, formats, and languages, reflecting the many different perspectives used. In the above example of deforestation monitoring, the disciplines involved range from forestry and agriculture through climatology and chemistry to economics and political science. The formats include all known types of spatial data, including rapidly evolving types of sensor data, complex time series and statistical metadata. In another example, historians studying patterns of city development across cultures and times are going far beyond digital maps to model spatial configurations of cities and their parts (Hansen 2000). They need to integrate texts in natural languages of today and from the past, analogue maps requiring awareness of the conventions of their epoch, archaeological findings, as well as drawings and images. In biology, to mention a third example, genomes are seen as sensors for environmental conditions that species faced over time, posing the problem of how to represent migratory patterns at multiple spatial, temporal, and thematic granularities; at the phenotype level, spatio-temporal pattern
+
+languages are developed to describe life histories in relation to environmental interactions and diseases (Lewejohann et al. 2009).
+
+5
+
+One of the most powerful information integrators to bridge such diverse sources of information is a spatial and temporal reference (Janowicz 2010), either implicit (for example, by referring to events or persons) or explicit (for example, through place names or coordinates). So far, this integrative property of spatial information has mainly been exploited technologically, through attempts at broadening the use of GIS and related technologies. These attempts have reached their limits, due to the many technical hurdles and complexities that have to be overcome by non-specialists.
+
+Existing Attempts at Transdisciplinary Integration
+Geographic information scientists and technologists have been working for almost two decades to integrate spatial information into mainstream information technology, as well as into science and society at large. Two notable efforts are the Center for Spatially Integrated Social Science (CSISS) at the University of California Santa Barbara (UCSB) and the more broadly conceived spatial@ucsb center. Both have shown how spatial thinking and spatial information can help integrate heterogeneous data sources and different disciplinary approaches to address a broad range of problems.
+At the global, transdisciplinary level, technological and institutional efforts still overshadow conceptual efforts, and the latter have not reached consensus. For example, the vision of the Open Geospatial Consortium (OGC) went from, originally, `The complete integration of geospatial data and geoprocessing resources into mainstream computing' to today's `Realization of the full societal, economic and scientific benefits of integrating electronic location resources into commercial and institutional processes
+
+6
+worldwide.'3. These statements reflect the integrative goals, but have not yet led to a comprehensive conceptual foundation for specifications.
+The expectation behind the many large-scale efforts to create Spatial Data Infrastructures (SDI), nationally and internationally, is that more of the purported 80% of decisions in society with a spatial component will become informed by spatial information, thereby improving business, governance, and science. But SDI initiatives, similar to and in close connection with standards organizations, tend to focus on technical and institutional questions, often cultivating an insider view of spatial data and services rather than a demand-driven and problem-solving perspective. Interestingly, in the broader information infrastructure context, major progress toward large-scale integration through spatial information has been made through the assimilation of imagery and map data with other data by companies such as Google or Microsoft and the widespread production and use of spatial information through social networks such as Open Street Map or Foursquare.
+Concepts of Spatial Information for Integration
+Concepts of spatial information are defined here as concepts to interpret spatial data or computations. For example, the concept of a field is a conceptualization applied to phenomena like temperature or collective motion, which are represented by, for example, raster or point data in a GIS. The field is the modelling concept, not the model and not the modelled phenomenon. Ignoring this distinction has produced some confusion in standards for spatial information (Probst et al. 2004).
+Concepts of spatial information include spatial concepts, which serve to reason about space, and information concepts to reason about spatial information. Information concepts may be spatial or not. An example of the former is location, referring to space
+3 http://www.opengeospatial.org/ogc/vision
+
+7
+and being used to interpret spatial data. An example of the latter is the concept of value, which can refer to spatial information, but is not spatial. An example of both is granularity, which is a spatial measure, but is also used to interpret spatial data. The coexistence of such content and representation concepts is characteristic for all information sciences.
+Spatial is more than geographic. Smaller spaces than those of geography (atoms and subatomic particles, molecules, crystals, cells and organs) as well as larger ones (planets, galaxies, the whole universe) characterize entire disciplines using and producing spatial information. This information is sometimes, and could more often be, modelled and analysed using techniques from geographic information science, such as mapping or network analyses. Such intra-disciplinary (but extra-geography) spatial analyses also benefit from a high-level conceptual view of spatial information, clarifying the nature of spatial properties, relations, and interactions.
+Choosing Core Concepts
+How should the core concepts be chosen? The attribute "core" implies essential or indispensable for something. One could ask, for example, which mathematical notions are essential to understand spatial information. While this would suggest notions like neighbourhood and graphs, concepts like event or granularity might not turn up, despite their key role in understanding spatial information. Or, one could look for spatial and information concepts in a foundational ontology. However, such ontologies are at very high levels of abstraction and typically give a somewhat simplistic account of the few spatial concepts they contain (treating location as a region in absolute space). Yet another approach would be to pick the concepts based on cognitive or linguistic
+
+8
+theories, like those of image schemas or linguistic prepositions. Such an approach would also miss out some important notions, like accuracy or value.
+Instead of taking a formal or cognitive perspective, this work started from a survey of concepts actually implemented in spatial data and computations. To become a core concept, a candidate notion has to be deemed indispensable in interpreting a specific piece of geographic information. The level of generality was chosen as high as possible, while requiring that the concepts still be common sense. For example, motion, growth, diffusion, and other happenings in space became generalized to events, but occurrent and perdurant (generalizing over processes, events, and states) would have been overly abstract. Finally, there should not be dozens of core concepts, but a set that one can grasp at once. The resulting concept choice has been extended and refined based on discussions with many researchers and practitioners.
+While some arbitrariness remains in this method, it at least uses explicit decision criteria, unlike most choices in GIS textbooks and standards. A further advantage of the computational, bottom-up approach is that it delivers data and tools "for free" to transdisciplinary research, once a theory or hypothesis has been formulated in terms of the core concepts, due to the requirement that the concepts be implemented. The selection method is empirical, allowing for falsification by finding spatial data or computations that cannot be interpreted through any of the proposed concepts or concepts that can be replaced by others on the list, or by demonstrating that it is impossible to implement a core concept. Further support for the chosen concepts comes from the fact that the synthesis of concepts relevant to the social sciences suggested in Janelle & Goodchild (2011) independently produced a similar list (with the abovementioned difference in non-spatial information concepts).
+
+9
+Ten Core Concepts of Spatial Information
+The proposed core concepts of spatial information include the spatial concepts of location and neighbourhood, field and object, and network and event, as well as the information concepts of granularity, accuracy, meaning, and value. A natural pairing of the concepts as listed here has been observed (Janelle 2012) and will be explored in future work. All concepts are given a high level qualitative description here, without referencing the vast literature that exists on each of them, as no reasonable number of references could do justice to the breadth of any concept. < Table 1 here >
+Location
+Spatial information is always linked to location in some way, primarily to answer where questions. Perhaps counter-intuitively, location is a relation, not a property. Nothing has an intrinsic location, even if it always remains where it is. All location descriptions express spatial relations between figures to be located and chosen grounds (a region, a street network, coordinate axes). How one locates things, i.e., what ground and what spatial relation one chooses, depends on context. When grounds become salient, as in the case of places, they tend to be thought of as "locations" in the sense of objects.
+Spatial reference systems standardize location relations and turn them into attributes, describing positions in a system. Yet, when data use multiple reference systems (for example, latitude and longitude as well as projected coordinates), locations need to be understood as relations and interpreted with respect to their grounds (for example, the Greenwich meridian and equator).
+
+10
+Neighbourhood
+Relating different phenomena through location is fundamental to spatial analysis. The great power of such locational analyses results from the fact that nearby things tend to be more related than distant things (Tobler 1970). Nearness, or rather the neighbourhood answering the question what is near, is therefore a natural companion concept to location.
+Neighbourhoods are commonly thought of as regions, characterizing the spatial context. Definitions of near and neighbourhood are not only context-dependent, but also necessarily vague. Even if the context to be captured is specified (for example, the region from which one can walk to a bus station), neighbourhoods remain imprecisely defined and lack crisp boundaries.
+Field
+Fields describe phenomena that have a scalar or vector attribute everywhere in a space of interest, for example air temperatures on the earth's surface. Field information answers the question what is here?, where here can be anywhere in the space considered. Generalizing the field notion from physics, field-based spatial information can also represent attributes that are computed rather than measured, such as probabilities or densities.
+Fields are one of the two fundamental ways of structuring spatial information, the other being objects. Both fix time in the framework of Sinton (1978), with fields resulting from controlled space and measured theme and objects resulting from controlled theme and measured space. Time can also be controlled instead of fixed. Controlling it together with space leads to space-time fields; controlling it together with theme produces animations. Fields have been shown to be more fundamental than
+
+11
+objects: so-called general field models are capable of integrating field and object views (Liu et al. 2008).
+Object
+Objects describe individuals that have an identity as well as spatial, temporal, and thematic properties. Object information answers questions about properties and relations of objects. It results from fixing theme, controlling time, and measuring space. Features, such as surfaces or parts of them, depend on objects, but can also be understood as a special case of them.
+The notion of an object implies boundedness, but this does not mean that the object's boundaries need to be known or even knowable, only that there are limits outside of which there are no parts of the object. Crude examples of such limits are the minimal bounding boxes used for indexing and querying objects in databases. Many objects (particularly natural ones) do not have crisp boundaries (Burrough & Frank 1996). Differences between spatial information from multiple sources are often caused by more or less arbitrary delimitations through context-dependent boundaries. Many questions about objects and features can indeed be answered without boundaries, using simple point representations with thematic attributes.
+Network
+Network information answers questions about connectivity, which is central to space and spatial information. It captures binary relationships among arbitrary numbers of objects, called the nodes or vertices of a network. Any relation of interest can connect the nodes and be represented by edges. The spatiality of a network results from positioning the nodes in some space and may involve geometric properties of the edges, such as their length or shape.
+
+12
+The two main kinds of networks encountered in spatial information are link and path networks. Link networks capture logical or other abstract relationships between nodes, such as friendships, business relations, or treaties between social agents. Path or transportation networks model systems of paths along which matter, energy or information flows. Examples are roads, utilities, communication lines, synapses, blood vessels, or electric circuits.
+Network applications benefit from the well-studied representations of networks as graphs and the correspondingly vast choice of algorithms. Partly due to this sound mathematical and computational basis, networks are the spatial concept that is most broadly recognized and applied across disciplines. One may speculate from this success story that a similar level of understanding and formalization of the other core concepts will encourage their use in transdisciplinary work. As the exposure here shows, such a level has not yet been reached in most cases.
+Event
+Events and processes are of central interest to science and society, for answering questions about change. Spatial events manifest themselves through changes of locations (i.e., motion), neighbourhoods, fields, objects, and networks, i.e., changes to instances of the previous core concepts. Events get related through temporal relations as well as through spatial relations among their participants. They can be seen as carved out of processes in the same way that physical objects are carved out of matter, i.e. by bounding the processes and giving each event an identity (Galton & Mizoguchi 2009).
+Granularity
+Granularity is the first (and most spatial) concept of information on the list. It characterizes the size of the spatial, temporal, and thematic units about which
+
+13
+information is reported. Granularity information answers questions about the precision of spatial information. It matters most when taking and evaluating decisions based on that information.
+Granularity characterizes information about all concepts introduced so far: location is recorded at certain granularities, neighbourhoods can be identified at several levels, fields are recorded at certain spacings or sizes of cells, and the choice of the types of objects (say, buildings vs. cities) or nodes (say, transistors vs. people) determines the spatial granularities of object and network information. Events are defined and distinguished by choosing granularity levels in space, time, and theme.
+Accuracy
+Accuracy is a key property of spatial information, capturing how information relates to the world. Information about accuracy answers questions about the correctness of spatial information. Assessing the accuracy of information requires two assumptions: that there is, at least in principle, correct information and that the results of repeated measurements or calculations distribute in some form regularly around it. The first assumption requires an unambiguous specification of the reported phenomenon and of the procedure to measure it. The second assumption requires an understanding of measurement as a random process.
+Meaning
+Understanding what producers meant by some spatial information is crucial to its adequate use. Information about meaning (semantic information) answers the question how to interpret the terms used in spatial information. It concerns the spatial, temporal, and thematic components. Data and computations do not have a well-defined meaning by themselves, but are used by somebody to mean something in some context.
+
+14
+Therefore, it is impossible to fix the meaning of terms in information. However, one can make the conditions for using and interpreting a term explicit. This is what ontologies do: they state constraints on the use and interpretation of terms.
+But language use is flexible and does not always follow rules, even for technical terms. An empirical account of how some terms are actually used can therefore provide additional insights on intended meaning and actual interpretation. This is what folksonomies deliver: they list and group the terms with which information resources have been tagged.
+Value
+The final core concept proposed is that of value. Information about values attached to or affected by spatial information answers questions about the roles played by spatial information in society. The prototypical value is economic, but the valuation of spatial information as a good in society goes far beyond monetary considerations. It includes assessing the relation of spatial information to other important values in society, such as privacy, trust, infrastructure, or heritage.
+Given the wide-ranging aspects of spatial information values, no coherent theoretical framework for them can be expected any time soon. Even theories about the economic value of spatial information remain sketchy and difficult to apply, because they involve parameters that are hard to generalize, control, and measure. The values of information, economic and otherwise, tend to accrue holistically and unpredictably, by new questions that can be asked and answered.
+Conclusions and outlook
+Geographic information science and technology have matured to the point where they need transdisciplinary challenges to grow, as evidenced by the many cross-cutting
+
+15
+efforts at applying spatial thinking, reasoning, and computing to explanations across scientific disciplines. As an alternative to the intimidating letter soup used to refer to technical aspects of spatial information (consider GML, WMS, WFS, SVG)4, this article has proposed a small set of core concepts of spatial information, expected to be intelligible to non-specialists and conducive to transdisciplinary research.
+The set of concepts is now being analysed and described in more detail5. The main research challenge, in the context of supporting transdisciplinary work, is the need to map the concepts across disciplines. Having identified common concepts does not imply that they are used in the same way across disciplines. For example, one discipline's idea of a neighbourhood may be quite different from that of another. To map between different uses of the concepts, they could be formalized into an ontology (Guarino 1995), building on existing ontologies of spatial information developed with slightly different objectives (Frank 2003; Couclelis 2010). Yet, abstracting further from the concepts in order to place them into the hierarchy of a foundational ontology would not necessarily solve the mapping problem. For example, specifying that a neighbourhood is a spatial region may not help to map between process-based definitions of neighbourhood. An approach that solves the mapping problem more effectively is to turn the concepts into ontology patterns (Gangemi et al. 2005). As I have shown for the concept of path (Kuhn 2007), Haskell type classes with applicationspecific instantiations of data types serve this purpose ideally6. They are able to provide executable ontological specifications for both levels, the core concepts and their varying specific uses. The insight that these two levels can co-exist and be formally related is itself a key result of this work.
+4 GML stands for Geography Markup Language, WMS for Web Map Service, WFS for Web Feature Service, SVG for Scalable Vector Graphics
+5 See http://ifgi.uni-muenster.de/services/ojs/index.php/ccsi/article/view/4 for a continuing discussion.
+6 See also http://vocamp.org/wiki/GeoVoCampSB2012
+
+16
+Transdisciplinary research often involves building theories of change (Câmara et
+al. 2009). One of the main benefits to be expected from a list of core concepts of spatial
+information is that they establish the conceptual foundations for such theories. If the
+theories can be formulated in terms of the proposed set of concepts, their choice will be
+corroborated; if not, other concepts will have to join or replace them.
+Acknowledgments
+This work has been supported through the International Research Training Group on Semantic Integration of Geospatial Information by the DFG (GRK 1498) and through extended stays at INPE, the Brazilian Institute for Space Research and at the Geography Department of UCSB, the University of California at Santa Barbara. Countless discussions over decades with many colleagues have encouraged and influenced it. The members of http://musil.uni-muenster.de and many students have been helpful critics. The reviewers and attendees of the GeoInfo 2011 conference, where an earlier selection of concepts was presented (Kuhn 2011), provided useful comments that led to changes in the concept selection, as did the comments of attendees of other presentations. The editors of this special issue and two anonymous reviewers helped clarify the ideas.
+References
+Aguiar, A.P.D., Câmara, G. & Escada, M.I.S., 2007. Spatial statistical analysis of landuse determinants in the Brazilian Amazonia: Exploring intra-regional heterogeneity. Ecological Modelling, 209(2-4), pp.169­188.
+Burrough, P.A. & Frank, A.U. eds., 1996. Geographic Objects with Indeterminate Boundaries, Taylor&Francis.
+Couclelis, H., 2010. Ontologies of geographic information. International Journal of Geographical Information Science, 24(12), pp.1785­1809.
+Câmara, G. et al., 2009. Geographical Information Engineering in the 21st Century. In G. Navratil, ed. Research trends in geographic information science. Springer Verlag, pp. 203­218.
+Frank, A.U., 2003. Ontology for spatio-temporal databases. In T. Sellis, ed. The Chorochronos Approach. pp. 9­77.
+Galton, A. & Mizoguchi, R., 2009. The Water Falls but the Waterfall does not Fall: New perspectives on Objects , Processes and Events. Applied Ontology, 4(2), p.71--107.
+
+17
+Gangemi, A. et al., 2005. Ontology Design Patterns for Semantic Web Content. In Y. Gil et al., eds. THE SEMANTIC WEB ­ ISWC 2005. Berlin, Heidelberg: Springer Berlin Heidelberg, pp. 262­276.
+Goodchild, M.F., 1992. Geographical information science. International Journal of Geographical Information Science, 6(1), pp.31­45.
+Goodchild, M.F., 2010. Twenty years of progress: GIScience in 2010. Journal of Spatial Information Science, 1(1), pp.3­20.
+Guarino, N., 1995. Formal ontology, conceptual analysis and knowledge representation. International Journal of Human-Computer Studies, 43(5-6), pp.625­640.
+Hansen, M.H. ed., 2000. A Comparative Study of Thirty City-state Cultures: An Investigation, Kongelige Danske Videnskabernes Selskab.
+Janelle, D.G., 2012. Personal communication.
+Janelle, D.G. & Goodchild, M.F., 2011. Concepts, Principles, Tools, and Challenges in Spatially Integrated Social Science. The SAGE Handbook of GIS and Society, pp.27­45.
+Janowicz, K., 2010. The Role of Space and Time For Knowledge Organization on the Semantic Web. Semantic Web - Interoperability, Usability, Applicability, 1(1-2), pp.25­32.
+Kuhn, W., 2007. An Image-Schematic Account of Spatial Categories. In S. Winter et al., eds. 8th International Conference on Spatial Information Theory (COSIT). Melbourne (Australia): Springer-Verlag, pp. 152­168.
+Kuhn, W., 2011. Core Concepts of Spatial Information: A First Selection. In XII GEOINFO, November 27-29, 2011, Campos do Jordão, Brazil. pp. 13­26.
+Lewejohann, L. et al., 2009. Behavioral phenotyping of a murine model of Alzheimer's disease in a seminaturalistic environment using RFID tracking. Behavior research methods, 41(3), pp.850­856.
+Liu, Y. et al., 2008. Towards a General Field model and its order in GIS. International Journal of Geographical Information Science, 22(6), pp.623­643.
+Probst, F. et al., 2004. Connecting ISO and OGC models to the semantic web. In 3rd International Conference on Geographic Information Science (GIScience, Short Papers). Baltimore, MD (USA), pp. 181­184.
+Sinton, D. F. (1978). The inherent structure of information as a constraint to analysis: Mapped thematic data as a case study. (G. Dutton, Ed.) Harvard papers on geographic information systems, 6, 1­17.
+Tobler, W., 1970. A computer movie simulating urban growth in the Detroit region. Economic Geography, 46, pp.234­240.
+
+Wickson, F., Carew, a. . & Russell, a. W., 2006. Transdisciplinary research: characteristics, quandaries and quality. Futures, 38(9), pp.1046­1059.
+
+18
+
+19
+
+Spatial Concepts Information Concepts
+
+Location Granularity
+
+Neighbourhood Field Object
+
+Accuracy
+
+Meaning Value
+
+Network
+
+Event
+
+Table 1. The proposed core concepts of spatial information.
+
+
